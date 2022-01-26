@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Summoner from "../pages/Summoner";
 
-export default function Exec(){
+export default function Rotas(){
     return(
         <BrowserRouter>
             <Routes>

@@ -1,10 +1,10 @@
+import { useState } from "react";
 import { Container, Header, Img } from "./style";
 
 import logo from "../../assets/logo.png";
 import img from "../../assets/lol.png";
-import { useState } from "react";
 
-export default function Home({ history }){
+function Home({ history }){
     const [summoner, setSummoner] = useState("")
 
     return (
@@ -29,7 +29,9 @@ export default function Home({ history }){
                     BUSCAR
                 </button>
             </form> 
-            <img src={img} alt="background"/>
+            <Img src={img} alt="background"/>
         </Container>
     );    
 }
+
+export default Home;
