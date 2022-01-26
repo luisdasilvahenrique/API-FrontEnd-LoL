@@ -3,13 +3,15 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Summoner from "../pages/Summoner";
 
-export default function Rotas(){
+function Rotas(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" exact component={Home} />
-                <Route path="/summoner/:id" component={Summoner} />    
+                <Route path="/" exact element={<Home />} />
+                <Route path="/summoner/:id" element={<Summoner />} />    
             </Routes>
         </BrowserRouter>
     );
 }
+
+export default Rotas;

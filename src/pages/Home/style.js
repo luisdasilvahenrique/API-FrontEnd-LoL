@@ -77,7 +77,7 @@ export const Header = styled.div`
 
 export const Img = styled.img`
   margin-top: 20px;
-  width: 627px;
+  width: 560px;
   height: 400px;
   @media(max-width: 414px){
       width: 360px;
